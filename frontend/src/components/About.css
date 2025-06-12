@@ -83,3 +83,10 @@ background: linear-gradient(to right, #E7E9BB, #403B4A); /* W3C, IE 10+/ Edge, F
     margin: 0;
   }
 }
+
+@media (max-width: 768px) {
+  .about-container {
+      padding-top: 5rem;
+      padding-inline: 1rem;
+  }
+}
