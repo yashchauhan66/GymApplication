@@ -159,3 +159,8 @@
     padding: 1.5rem;
   }
 } 
+@media (max-width: 768px) {
+  .plans-container {
+      padding: 8rem 1rem;
+  }
+}
