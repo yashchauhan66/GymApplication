@@ -7,7 +7,7 @@
 }
 
 .hero {
-  background-image: url('../src/assets/gym.jpg');
+  background-image: url('../../public/gym.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;

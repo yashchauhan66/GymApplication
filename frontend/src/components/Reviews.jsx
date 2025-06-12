@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Reviews.css';
-import gym3 from '../assets/gym3.jpg';
+import gym3 from '../../public/gym3.jpg';
 
 const Reviews = () => {
   const [reviews, setReviews] = useState(() => {

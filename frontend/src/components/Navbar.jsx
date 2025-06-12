@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-import img from '/src/assets/gym1.jpg';
+import img from '../../public/gym.jpg';
 // import img from '../assets/himal.jpg';
 
 export default function Navbar() {
