@@ -10,7 +10,7 @@ export default function Signup() {
         email: '',
         password: '',
     });
-    const [msg, setMsg] = useState('');
+   
 
 
     const handleChange = (e) => {
@@ -26,22 +26,24 @@ export default function Signup() {
         // Handle signup logic here
         console.log(formData);
 
-    const response = await fetch("http://localhost:8000/api/signup" || "https://authontication-production.up.railway.app/signup", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-    });
-    const data = await response.json();
+        const response = await fetch("https://authontication-production.up.railway.app/signup", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(formData),
+        });
 
-    if (response.ok) {
-      setMsg(data.message);
-    } else {
-      setMsg(data.message);
-    }
-    
-};
+        if (response.ok) {
+            const data = await response.json();
+            console.log('Signup successful:', data);
+            // Handle successful signup (e.g., redirect to login page)
+        } else {
+            const errorData = await response.json();
+            console.error('Signup failed:', errorData);
+            // Handle signup error (e.g., show error message to user)
+        }
+    };
 
     return (
         <div className="signup-container">
