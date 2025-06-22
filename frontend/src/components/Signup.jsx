@@ -26,7 +26,7 @@ export default function Signup() {
         // Handle signup logic here
         console.log(formData);
 
-        const response = await fetch("https://authontication-production.up.railway.app/signup", {
+        const response = await fetch("https://gymapplication-1-xfxg.onrender.com/signup", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

@@ -22,7 +22,7 @@ export default function Login() {
     e.preventDefault();
     // Handle login logic here
     console.log(formData);
-    await fetch("http://localhost:8000/api/login" || "https://authontication-production.up.railway.app/signup", {
+    await fetch("https://gymapplication-1-xfxg.onrender.com/api/login", {
       method: "POST",
     headers: {
       "Content-Type": "application/json",

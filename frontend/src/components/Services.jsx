@@ -13,7 +13,7 @@ const Services = () => {
     const fetchExercises = async () => {
         try {
             // Try the production URL first
-            const baseUrl = "https://authontication-production.up.railway.app/api/exercises/";
+            const baseUrl = "https://gymapplication-1-xfxg.onrender.com/api/exercises/";
             const response = await fetch(baseUrl, {
                 method: "GET",
                 headers: {
