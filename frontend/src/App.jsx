@@ -12,11 +12,13 @@ import Plans from './components/Plans';
 import Payment from './components/Payment';
 import Success from './components/Success';
 
+
 function App() {
   return (
     <Router>
       <div className="app">
         <Navbar />
+        
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
